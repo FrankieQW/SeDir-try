@@ -21,8 +21,8 @@ Official PyTorch Implementation of [MC3D-AD: A Unified Geometry-aware Reconstruc
 ### 1.1 Requirements
 - **Conda virtual environment creation**
 ```
-conda create -n MC3D-AD python=3.8
-conda activate MC3D-AD
+conda create -n SeDir python=3.8
+conda activate SeDir
 pip install -r requirements.txt
 pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"
 pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
