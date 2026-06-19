@@ -13,6 +13,20 @@ class FeatureMSELoss(nn.Module):
         return self.criterion_mse(feature_rec, feature_align)
 
 
+class SeDiRLoss(nn.Module):
+    def __init__(self, weight=1.0):
+        super().__init__()
+        self.weight = weight
+
+    def forward(self, input):
+        return (
+            input["loss_rec"]
+            + input["loss_scl"]
+            + input["loss_cls"]
+            + input["loss_cos"]
+        )
+
+
 class ImageMSELoss(nn.Module):
     """Train a decoder for visualization of reconstructed features"""
 

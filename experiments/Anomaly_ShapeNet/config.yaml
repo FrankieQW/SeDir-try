@@ -4,20 +4,20 @@ port: 11112
 
 dataset:
   type: custom
-  data_dir: /Path/to/your/Anomaly_shapeNet/            #This path must be modified to the absolute path of your own dataset !!!
+  data_dir: /home/Yukino/Programs/SeDir/data/Anomaly_ShapeNet            #This path must be modified to the absolute path of your own dataset !!!
 
   train:
-    meta_file: ../../data/Anomaly_shapeNet/train.json
+    meta_file: ../../data/Anomaly_ShapeNet/train.json
 
   test:
-    meta_file: ../../data/Anomaly_shapeNet/test.json
+    meta_file: ../../data/Anomaly_ShapeNet/test.json
 
   batch_size: 1
   workers: 1 # number of workers of dataloader for each process
 
 criterion:
-  - name: FeatureMSELoss
-    type: FeatureMSELoss
+  - name: SeDiRLoss
+    type: SeDiRLoss
     kwargs:
       weight: 1.0
   # - name: CLSEntropyLoss
@@ -75,10 +75,10 @@ net:
         checkpoint_path: ../../pretrain_ckp/modelnet_8k.pth
         group_size: 128
         num_group: 1024
-        data_dir: /Path/to/your/Anomaly_shapeNet/           #This path must be modified to the absolute path of your own dataset !!!
+        data_dir: /home/Yukino/Programs/SeDir/data/Anomaly_ShapeNet           #This path must be modified to the absolute path of your own dataset !!!
     - name: reconstruction
       prev: backbone
-      type: models.reconstructions.UniAD
+      type: models.reconstructions.SeDiR
       kwargs: 
         inplanes: 384
         feature_size: 1024
@@ -91,13 +91,15 @@ net:
         activation: relu
         normalize_before: False
         cls_num: 40
-        k: 5
-        mask_ratio: 0.4
+        global_dim: 256
+        c3l_buffer_size: 64
+        contrast_temperature: 0.2
+        lambda_scl: 0.001
+        lambda_cls: 0.001
+        lambda_cos: 0.01
         feature_jitter:
           scale: 20.0
           prob: 1.0
-        neighbor_mask: 
-          neighbor_size: [32,32]
-          mask: [True, True, True] # whether use mask in [enc, dec1, dec2]
+        neighbor_mask: null
         initializer:
           method: xavier_uniform

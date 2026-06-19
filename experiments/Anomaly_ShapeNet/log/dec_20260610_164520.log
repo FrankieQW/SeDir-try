@@ -1,0 +1,120 @@
+[2026-06-10 16:45:20,913][   train_val.py][line:  64][    INFO] args: Namespace(config='./config.yaml', evaluate=True, local_rank='0')
+[2026-06-10 16:45:20,915][   train_val.py][line:  65][    INFO] config: {'criterion': [{'kwargs': {'weight': 1.0},
+                'name': 'FeatureMSELoss',
+                'type': 'FeatureMSELoss'}],
+ 'dataset': {'batch_size': 1,
+             'data_dir': '/home/Yukino/Programs/MC3D-AD/data/Anomaly_ShapeNet',
+             'test': {'meta_file': '../../data/Anomaly_ShapeNet/test.json'},
+             'train': {'meta_file': '../../data/Anomaly_ShapeNet/train.json'},
+             'type': 'custom',
+             'workers': 1},
+ 'evaluator': {'eval_dir': './result',
+               'key_metric': 'mean_pixel-AUROC_auc',
+               'metrics': {'auc': [{'name': 'std'},
+                                   {'kwargs': {'avgpool_size': [16, 16]},
+                                    'name': 'max'},
+                                   {'name': 'pixel'}]},
+               'save_dir': 'result'},
+ 'exp_path': '.',
+ 'frozen_layers': ['backbone'],
+ 'log_path': './log/',
+ 'net': [{'frozen': True,
+          'kwargs': {'checkpoint_path': '../../pretrain_ckp/modelnet_8k.pth',
+                     'data_dir': '/home/Yukino/Programs/MC3D-AD/data/Anomaly_ShapeNet',
+                     'group_size': 128,
+                     'num_group': 1024,
+                     'outlayers': [1, 2, 3, 4],
+                     'pretrained': True},
+          'name': 'backbone',
+          'type': 'models.backbones.pointmae'},
+         {'kwargs': {'activation': 'relu',
+                     'cls_num': 40,
+                     'dim_feedforward': 1024,
+                     'dropout': 0.1,
+                     'feature_jitter': {'prob': 1.0, 'scale': 20.0},
+                     'feature_size': 1024,
+                     'hidden_dim': 256,
+                     'initializer': {'method': 'xavier_uniform'},
+                     'inplanes': 384,
+                     'k': 5,
+                     'mask_ratio': 0.4,
+                     'neighbor_mask': {'mask': [True, True, True],
+                                       'neighbor_size': [32, 32]},
+                     'nhead': 8,
+                     'normalize_before': False,
+                     'num_decoder_layers': 4,
+                     'num_encoder_layers': 4},
+          'name': 'reconstruction',
+          'prev': 'backbone',
+          'type': 'models.reconstructions.UniAD'}],
+ 'port': 11112,
+ 'random_seed': 42,
+ 'save_path': './checkpoints/',
+ 'saver': {'always_save': False,
+           'auto_resume': False,
+           'load_path': 'checkpoints/ckpt.pth.tar',
+           'log_dir': 'log/',
+           'save_dir': 'checkpoints/'},
+ 'trainer': {'clip_max_norm': 0.1,
+             'lr_scheduler': {'kwargs': {'gamma': 0.1, 'step_size': 800},
+                              'type': 'StepLR'},
+             'max_epoch': 1000,
+             'optimizer': {'kwargs': {'betas': [0.9, 0.999],
+                                      'lr': 0.0001,
+                                      'weight_decay': 0.0001},
+                           'type': 'AdamW'},
+             'print_freq_step': 10,
+             'tb_freq_step': 1,
+             'val_freq_epoch': 100},
+ 'version': 'v1.0.0'}
+[2026-06-10 16:45:22,213][   train_val.py][line:  91][    INFO] layers: ['backbone', 'reconstruction']
+[2026-06-10 16:45:22,213][   train_val.py][line:  92][    INFO] active layers: ['reconstruction']
+[2026-06-10 16:45:22,214][custom_dataset.py][line:  24][    INFO] building CustomDataset from: ../../data/Anomaly_ShapeNet/train.json
+[2026-06-10 16:45:22,216][custom_dataset.py][line:  24][    INFO] building CustomDataset from: ../../data/Anomaly_ShapeNet/test.json
+[2026-06-10 16:45:32,582][   train_val.py][line: 286][    INFO] Test: [10/1312]	Time 0.780 (1.036)
+[2026-06-10 16:45:40,592][   train_val.py][line: 286][    INFO] Test: [20/1312]	Time 0.705 (0.918)
+[2026-06-10 16:45:48,480][   train_val.py][line: 286][    INFO] Test: [30/1312]	Time 0.738 (0.875)
+[2026-06-10 16:45:57,050][   train_val.py][line: 286][    INFO] Test: [40/1312]	Time 0.753 (0.871)
+[2026-06-10 16:46:05,252][   train_val.py][line: 286][    INFO] Test: [50/1312]	Time 0.851 (0.861)
+[2026-06-10 16:46:13,056][   train_val.py][line: 286][    INFO] Test: [60/1312]	Time 0.726 (0.847)
+[2026-06-10 16:46:20,920][   train_val.py][line: 286][    INFO] Test: [70/1312]	Time 0.853 (0.839)
+[2026-06-10 16:46:28,241][   train_val.py][line: 286][    INFO] Test: [80/1312]	Time 0.661 (0.825)
+[2026-06-10 16:46:35,653][   train_val.py][line: 286][    INFO] Test: [90/1312]	Time 0.716 (0.816)
+[2026-06-10 16:46:43,069][   train_val.py][line: 286][    INFO] Test: [100/1312]	Time 0.739 (0.808)
+[2026-06-10 16:46:50,231][   train_val.py][line: 286][    INFO] Test: [110/1312]	Time 0.737 (0.800)
+[2026-06-10 16:46:57,866][   train_val.py][line: 286][    INFO] Test: [120/1312]	Time 0.710 (0.797)
+[2026-06-10 16:47:05,586][   train_val.py][line: 286][    INFO] Test: [130/1312]	Time 0.771 (0.795)
+[2026-06-10 16:47:13,279][   train_val.py][line: 286][    INFO] Test: [140/1312]	Time 0.907 (0.793)
+[2026-06-10 16:47:20,502][   train_val.py][line: 286][    INFO] Test: [150/1312]	Time 0.718 (0.789)
+[2026-06-10 16:47:28,174][   train_val.py][line: 286][    INFO] Test: [160/1312]	Time 0.714 (0.787)
+[2026-06-10 16:47:35,795][   train_val.py][line: 286][    INFO] Test: [170/1312]	Time 0.687 (0.786)
+[2026-06-10 16:47:43,347][   train_val.py][line: 286][    INFO] Test: [180/1312]	Time 0.766 (0.784)
+[2026-06-10 16:47:51,787][   train_val.py][line: 286][    INFO] Test: [190/1312]	Time 0.925 (0.787)
+[2026-06-10 16:47:59,482][   train_val.py][line: 286][    INFO] Test: [200/1312]	Time 0.715 (0.786)
+[2026-06-10 16:48:07,731][   train_val.py][line: 286][    INFO] Test: [210/1312]	Time 0.900 (0.788)
+[2026-06-10 16:48:15,606][   train_val.py][line: 286][    INFO] Test: [220/1312]	Time 0.678 (0.788)
+[2026-06-10 16:48:23,437][   train_val.py][line: 286][    INFO] Test: [230/1312]	Time 0.744 (0.788)
+[2026-06-10 16:48:30,995][   train_val.py][line: 286][    INFO] Test: [240/1312]	Time 0.737 (0.787)
+[2026-06-10 16:48:38,115][   train_val.py][line: 286][    INFO] Test: [250/1312]	Time 0.727 (0.784)
+[2026-06-10 16:48:45,751][   train_val.py][line: 286][    INFO] Test: [260/1312]	Time 0.818 (0.783)
+[2026-06-10 16:48:53,429][   train_val.py][line: 286][    INFO] Test: [270/1312]	Time 0.660 (0.782)
+[2026-06-10 16:49:01,424][   train_val.py][line: 286][    INFO] Test: [280/1312]	Time 0.816 (0.783)
+[2026-06-10 16:49:09,215][   train_val.py][line: 286][    INFO] Test: [290/1312]	Time 0.756 (0.783)
+[2026-06-10 16:49:16,551][   train_val.py][line: 286][    INFO] Test: [300/1312]	Time 0.722 (0.781)
+[2026-06-10 16:49:24,190][   train_val.py][line: 286][    INFO] Test: [310/1312]	Time 0.721 (0.781)
+[2026-06-10 16:49:32,526][   train_val.py][line: 286][    INFO] Test: [320/1312]	Time 0.744 (0.782)
+[2026-06-10 16:49:39,947][   train_val.py][line: 286][    INFO] Test: [330/1312]	Time 0.695 (0.781)
+[2026-06-10 16:49:47,405][   train_val.py][line: 286][    INFO] Test: [340/1312]	Time 0.737 (0.780)
+[2026-06-10 16:49:55,249][   train_val.py][line: 286][    INFO] Test: [350/1312]	Time 0.739 (0.780)
+[2026-06-10 16:50:02,985][   train_val.py][line: 286][    INFO] Test: [360/1312]	Time 0.754 (0.780)
+[2026-06-10 16:50:10,749][   train_val.py][line: 286][    INFO] Test: [370/1312]	Time 0.701 (0.780)
+[2026-06-10 16:50:18,469][   train_val.py][line: 286][    INFO] Test: [380/1312]	Time 0.891 (0.780)
+[2026-06-10 16:50:26,110][   train_val.py][line: 286][    INFO] Test: [390/1312]	Time 0.933 (0.779)
+[2026-06-10 16:50:33,838][   train_val.py][line: 286][    INFO] Test: [400/1312]	Time 0.804 (0.779)
+[2026-06-10 16:50:41,460][   train_val.py][line: 286][    INFO] Test: [410/1312]	Time 0.853 (0.779)
+[2026-06-10 16:50:48,782][   train_val.py][line: 286][    INFO] Test: [420/1312]	Time 0.712 (0.778)
+[2026-06-10 16:50:56,190][   train_val.py][line: 286][    INFO] Test: [430/1312]	Time 0.691 (0.777)
+[2026-06-10 16:51:06,406][   train_val.py][line: 286][    INFO] Test: [440/1312]	Time 0.698 (0.782)
+[2026-06-10 16:51:14,146][   train_val.py][line: 286][    INFO] Test: [450/1312]	Time 0.745 (0.782)
+[2026-06-10 16:51:21,661][   train_val.py][line: 286][    INFO] Test: [460/1312]	Time 0.667 (0.781)
+[2026-06-10 16:51:29,115][   train_val.py][line: 286][    INFO] Test: [470/1312]	Time 0.723 (0.781)

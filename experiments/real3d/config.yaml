@@ -16,8 +16,8 @@ dataset:
   workers: 1 # number of workers of dataloader for each process
 
 criterion:
-  - name: FeatureMSELoss
-    type: FeatureMSELoss
+  - name: SeDiRLoss
+    type: SeDiRLoss
     kwargs:
       weight: 1.0
   # - name: CLSEntropyLoss
@@ -74,14 +74,14 @@ net:
         outlayers: [1,2,3,4]
         checkpoint_path: ../../pretrain_ckp/modelnet_8k.pth
         group_size: 128
-        num_group: 4096
+        num_group: 1024
         data_dir: /Path/to/your/real3D_down/  #This path must be modified to the absolute path of your own dataset !!!
     - name: reconstruction
       prev: backbone
-      type: models.reconstructions.UniAD
+      type: models.reconstructions.SeDiR
       kwargs: 
         inplanes: 384
-        feature_size: 4096
+        feature_size: 1024
         hidden_dim: 256
         nhead: 8
         num_encoder_layers: 4
@@ -90,14 +90,16 @@ net:
         dropout: 0.1
         cls_num: 12
         activation: relu
-        k: 7
-        mask_ratio: 0.4
+        global_dim: 256
+        c3l_buffer_size: 64
+        contrast_temperature: 0.2
+        lambda_scl: 0.001
+        lambda_cls: 0.001
+        lambda_cos: 0.01
         normalize_before: False
         feature_jitter:
           scale: 20.0
           prob: 1.0
-        neighbor_mask: 
-          neighbor_size: [32,32]
-          mask: [True, True, True] 
+        neighbor_mask: null
         initializer:
           method: xavier_uniform

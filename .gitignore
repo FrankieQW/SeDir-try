@@ -1,0 +1,14 @@
+gitignore
+#文件夹
+result
+#数据文件
+*.txt
+*.pcd
+
+#模型文件
+*.tar
+*.pth
+
+cuda.sh
+
+*.pdf
