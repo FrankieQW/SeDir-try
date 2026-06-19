@@ -1,6 +1,6 @@
 # SeDiR
 
-This repository is a SeDiR reproduction project derived from the official MC3D-AD implementation. It preserves the MC3D-AD data pipeline, PointMAE backbone, training loop, and evaluation helpers, while adding a SeDiR-style reconstruction module with:
+This repository is a SeDiR reproduction project derived from the official [MC3D-AD](https://github.com/jiayi-art/MC3D-AD) implementation. It preserves the MC3D-AD data pipeline, PointMAE backbone, training loop, and evaluation helpers, while adding a SeDiR-style reconstruction module with:
 
 - Coarse-to-Fine Global Tokenization (CFGT)
 - Category-Conditioned Contrastive Learning (C3L)
