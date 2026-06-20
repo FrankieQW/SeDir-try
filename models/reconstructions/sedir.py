@@ -190,10 +190,13 @@ class CoarseToFineGlobalTokenizer(nn.Module):
         projected = self.scale_proj[scale_name](tokens)
         return self.encoder(projected, pos=pos)
 
-    def forward(self, feature_tokens, pos_embed):
+    def forward(self, feature_tokens, pos_embed, fine_tokens=None, coarse_tokens=None):
+        fine_tokens = feature_tokens if fine_tokens is None else fine_tokens
+        coarse_tokens = feature_tokens if coarse_tokens is None else coarse_tokens
+
         base = self._encode_scale(feature_tokens, pos_embed, "base")
-        fine = self._encode_scale(feature_tokens, pos_embed, "fine")
-        coarse = self._encode_scale(feature_tokens, pos_embed, "coarse")
+        fine = self._encode_scale(fine_tokens, pos_embed, "fine")
+        coarse = self._encode_scale(coarse_tokens, pos_embed, "coarse")
 
         batch = feature_tokens.size(1)
         act = self.act_token.expand(-1, batch, -1)
@@ -290,7 +293,13 @@ class GeometryGuidedDecoderLayer(nn.Module):
     def __init__(self, hidden_dim, nhead, dim_feedforward, dropout, activation, normalize_before):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(hidden_dim, nhead, dropout=dropout)
-        self.geo_attn = GeometryGuidedAttention(hidden_dim, nhead, dropout)
+        self.semantic_geo_attn = GeometryGuidedAttention(hidden_dim, nhead, dropout)
+        self.token_geo_attn = GeometryGuidedAttention(hidden_dim, nhead, dropout)
+        self.guided_fusion = nn.Sequential(
+            nn.Linear(hidden_dim * 2, hidden_dim),
+            nn.GELU(),
+            nn.Linear(hidden_dim, hidden_dim),
+        )
         self.linear1 = nn.Linear(hidden_dim, dim_feedforward)
         self.dropout = nn.Dropout(dropout)
         self.linear2 = nn.Linear(dim_feedforward, hidden_dim)
@@ -308,7 +317,12 @@ class GeometryGuidedDecoderLayer(nn.Module):
         tokens2 = self.self_attn(q, k, value=tokens)[0]
         tokens = self.norm1(tokens + self.dropout1(tokens2))
 
-        guided = self.geo_attn(global_token, (memory + pos).transpose(0, 1), memory.transpose(0, 1), geo_desc)
+        memory_batch = memory.transpose(0, 1)
+        key_batch = (memory + pos).transpose(0, 1)
+        semantic_guided = self.semantic_geo_attn(global_token, key_batch, memory_batch, geo_desc)
+        token_query = tokens.mean(dim=0, keepdim=False).unsqueeze(1)
+        token_guided = self.token_geo_attn(token_query, key_batch, memory_batch, geo_desc)
+        guided = self.guided_fusion(torch.cat([semantic_guided, token_guided], dim=-1))
         tokens = self.norm2(tokens + self.dropout2(guided.transpose(0, 1)))
 
         tokens2 = self.linear2(self.dropout(self.activation(self.linear1(tokens))))
@@ -414,16 +428,39 @@ class SeDiR(nn.Module):
     def forward(self, input):
         feature_align = input["xyz_features"]
         center = input["center"].to(feature_align.device)
+        feature_fine = input.get("xyz_features_fine")
+        feature_coarse = input.get("xyz_features_coarse")
+        if feature_fine is not None:
+            feature_fine = feature_fine.to(feature_align.device)
+        if feature_coarse is not None:
+            feature_coarse = feature_coarse.to(feature_align.device)
+
         feature_tokens = rearrange(feature_align, "b n g -> g b n")
+        fine_tokens = rearrange(feature_fine, "b n g -> g b n") if feature_fine is not None else None
+        coarse_tokens = (
+            rearrange(feature_coarse, "b n g -> g b n") if feature_coarse is not None else None
+        )
         if self.training and self.feature_jitter:
             feature_tokens = self.add_jitter(
                 feature_tokens, self.feature_jitter.scale, self.feature_jitter.prob
             )
+            if fine_tokens is not None:
+                fine_tokens = self.add_jitter(
+                    fine_tokens, self.feature_jitter.scale, self.feature_jitter.prob
+                )
+            if coarse_tokens is not None:
+                coarse_tokens = self.add_jitter(
+                    coarse_tokens, self.feature_jitter.scale, self.feature_jitter.prob
+                )
         feature_tokens = self.input_proj(feature_tokens)
+        if fine_tokens is not None:
+            fine_tokens = self.input_proj(fine_tokens)
+        if coarse_tokens is not None:
+            coarse_tokens = self.input_proj(coarse_tokens)
         pos_embed = self.pos_embed(center).permute(1, 0, 2)
 
         base, _fine, _coarse, global_feature, global_token, loss_cos_raw = self.cfgt(
-            feature_tokens, pos_embed
+            feature_tokens, pos_embed, fine_tokens=fine_tokens, coarse_tokens=coarse_tokens
         )
         labels = _labels_from_input(input, feature_align.device)
         if labels is not None:

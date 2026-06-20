@@ -120,6 +120,20 @@ class Group(nn.Module):
         return neighborhood, center, ori_idx, center_idx
 
 
+def group_with_centers(xyz, center, group_size):
+    batch_size, num_points, _ = xyz.shape
+    group_size = min(group_size, num_points)
+    _, idx = KNN(k=group_size, transpose_mode=True)(xyz, center)
+    idx = idx.to(device=xyz.device)
+    ori_idx = idx
+    idx_base = torch.arange(0, batch_size, device=xyz.device).view(-1, 1, 1) * num_points
+    idx = (idx + idx_base).view(-1)
+    neighborhood = xyz.reshape(batch_size * num_points, -1)[idx, :]
+    neighborhood = neighborhood.reshape(batch_size, center.size(1), group_size, 3).contiguous()
+    neighborhood = neighborhood - center.unsqueeze(2)
+    return neighborhood, ori_idx
+
+
 class Encoder(nn.Module):
     def __init__(self, encoder_channel):
         super().__init__()
@@ -308,6 +322,11 @@ class PointTransformer(nn.Module):
 
         self.group_size = group_size
         self.num_group = num_group
+        self.multiscale_group_sizes = (
+            max(1, group_size // 2),
+            group_size,
+            group_size * 2,
+        )
         # grouper
         self.group_divider = Group(num_group=self.num_group, group_size=self.group_size)
         # define the encoder
@@ -406,6 +425,12 @@ class PointTransformer(nn.Module):
         print(f'[Transformer] Successful Loading the ckpt from {bert_ckpt_path}')
 
 
+    def _encode_groups(self, neighborhood, center):
+        group_input_tokens = self.encoder(neighborhood)
+        pos = self.pos_embed(center)
+        feature_list = self.blocks(group_input_tokens, pos)
+        return self.norm(feature_list[0]).transpose(-1, -2).contiguous()
+
     def forward(self, pts):
         if self.encoder_dims != self.trans_dim:
             B,C,N = pts.shape
@@ -436,15 +461,21 @@ class PointTransformer(nn.Module):
             # divide the point clo  ud in the same form. This is important
             neighborhood, center, ori_idx, center_idx = self.group_divider(pts)
 
-            group_input_tokens = self.encoder(neighborhood)  # B G N
-            pos = self.pos_embed(center)
-            # final input
-            x = group_input_tokens
-            # transformer
-            feature_list = self.blocks(x, pos)
-            feature_list = [self.norm(x).transpose(-1, -2).contiguous() for x in feature_list]
-            x = feature_list[0] #1152,torch.cat((feature_list[0],feature_list[1],), dim=1)
-            return x, center, ori_idx, center_idx
+            fine_neighborhood, _ = group_with_centers(
+                pts, center, self.multiscale_group_sizes[0]
+            )
+            coarse_neighborhood, _ = group_with_centers(
+                pts, center, self.multiscale_group_sizes[2]
+            )
+            x_fine = self._encode_groups(fine_neighborhood, center)
+            x = self._encode_groups(neighborhood, center)
+            x_coarse = self._encode_groups(coarse_neighborhood, center)
+            multiscale_features = {
+                "fine": x_fine,
+                "base": x,
+                "coarse": x_coarse,
+            }
+            return x, center, ori_idx, center_idx, multiscale_features
 
 
 
@@ -571,6 +602,20 @@ class Model1(torch.nn.Module):
             reg_data = get_registration_np(xyz[idx].cpu().numpy(),template)
             reg_list.append(reg_data)
         xyz_input = torch.tensor(reg_list).permute(0,2,1).cuda().float()
-        xyz_features, center, ori_idx, center_idx = self.xyz_backbone(xyz_input)
+        backbone_output = self.xyz_backbone(xyz_input)
+        if len(backbone_output) == 5:
+            xyz_features, center, ori_idx, center_idx, multiscale_features = backbone_output
+        else:
+            xyz_features, center, ori_idx, center_idx = backbone_output
+            multiscale_features = {}
 
-        return  {'xyz_features':xyz_features, 'center':center, 'ori_idx':ori_idx,'center_idx': center_idx}
+        output = {'xyz_features':xyz_features, 'center':center, 'ori_idx':ori_idx,'center_idx': center_idx}
+        if multiscale_features:
+            output.update(
+                {
+                    "xyz_features_fine": multiscale_features["fine"],
+                    "xyz_features_base": multiscale_features["base"],
+                    "xyz_features_coarse": multiscale_features["coarse"],
+                }
+            )
+        return output

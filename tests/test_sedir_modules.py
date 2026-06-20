@@ -1,6 +1,7 @@
 import torch
 
-from models.reconstructions.sedir import SeDiR
+from models.reconstructions.sedir import GeometryGuidedDecoderLayer, SeDiR
+from utils.eval_helper import fuse_semantic_confidence_scores
 
 
 def make_batch(batch_size=2, channels=384, groups=16, classes=4):
@@ -66,3 +67,57 @@ def test_sedir_losses_backpropagate():
 
     grad_norm = model.input_proj.weight.grad.abs().sum().item()
     assert grad_norm > 0
+
+
+def test_sedir_uses_multiscale_feature_inputs_for_global_token():
+    model = SeDiR(
+        inplanes=384,
+        feature_size=16,
+        hidden_dim=64,
+        nhead=4,
+        num_encoder_layers=1,
+        num_decoder_layers=1,
+        dim_feedforward=128,
+        dropout=0.0,
+        cls_num=4,
+        feature_jitter=None,
+        neighbor_mask=None,
+        initializer={"method": "xavier_uniform"},
+        c3l_buffer_size=8,
+        contrast_temperature=0.2,
+    )
+    model.eval()
+    batch = make_batch()
+
+    with torch.no_grad():
+        output_base = model(batch)
+        batch["xyz_features_fine"] = batch["xyz_features"] + 10.0
+        batch["xyz_features_coarse"] = batch["xyz_features"] - 10.0
+        output_multiscale = model(batch)
+
+    assert not torch.allclose(output_base["global_token"], output_multiscale["global_token"])
+
+
+def test_geometry_guided_decoder_layer_has_semantic_and_token_guidance_branches():
+    layer = GeometryGuidedDecoderLayer(
+        hidden_dim=64,
+        nhead=4,
+        dim_feedforward=128,
+        dropout=0.0,
+        activation="relu",
+        normalize_before=False,
+    )
+
+    assert hasattr(layer, "semantic_geo_attn")
+    assert hasattr(layer, "token_geo_attn")
+    assert hasattr(layer, "guided_fusion")
+
+
+def test_semantic_confidence_fusion_raises_low_confidence_object_scores():
+    image_scores = [0.2, 0.2]
+    cls_labels = [0, 0]
+    cls_probs = [[0.9, 0.1], [0.3, 0.7]]
+
+    fused = fuse_semantic_confidence_scores(image_scores, cls_labels, cls_probs, alpha=0.5)
+
+    assert fused[1] > fused[0]

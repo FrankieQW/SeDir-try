@@ -302,8 +302,15 @@ def validate(val_loader, model):
         logger.info("Gathering final results ...")
         # total loss
         logger.info(" * Loss {:.5f}\ttotal_num={}".format(final_loss, total_num.item()))
-        fileinfos, labels,image_max_score,masks,pred,cls_label,cls_pred,points = merge_together(config.evaluator.eval_dir)
+        fileinfos, labels,image_max_score,masks,pred,cls_label,cls_pred,points,cls_prob = merge_together(config.evaluator.eval_dir)
         shutil.rmtree(config.evaluator.eval_dir)
+        semantic_alpha = config.evaluator.get("semantic_score_alpha", 0.0)
+        if semantic_alpha > 0:
+            from utils.eval_helper import fuse_semantic_confidence_scores
+
+            image_max_score = fuse_semantic_confidence_scores(
+                image_max_score, cls_label, cls_prob, semantic_alpha
+            )
         # evaluate, log & vis
         ret_metrics = performances(fileinfos, labels,image_max_score,masks,pred,cls_label,cls_pred)
         log_metrics(ret_metrics, config.evaluator.metrics)

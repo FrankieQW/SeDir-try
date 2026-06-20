@@ -20,7 +20,8 @@ def dump(save_dir, outputs):
     clsnames = outputs["clsname"]
     labels = outputs["label"].cpu().numpy()
     cls_labels = outputs["cls_label"].cpu().numpy()
-    cls_preds = torch.argmax(outputs["cls_pred"],dim=1).cpu().numpy()
+    cls_probs = torch.softmax(outputs["cls_pred"], dim=1).cpu().numpy()
+    cls_preds = np.argmax(cls_probs, axis=1)
     for i in range(batch_size):
         file_dir, filename = os.path.split(filenames[i])
         _, subname = os.path.split(file_dir)
@@ -37,7 +38,8 @@ def dump(save_dir, outputs):
             center_idx=center_idx[i],
             clsname=clsnames[i],
             cls_label=cls_labels[i],
-            cls_pred=cls_preds[i]
+            cls_pred=cls_preds[i],
+            cls_prob=cls_probs[i],
         )
 
 
@@ -63,6 +65,7 @@ def merge_together(save_dir):
     image_max_score = []
     cls_label = []
     cls_pred = []
+    cls_prob = []
     points = []
     for npz_file in npz_file_list:
         npz = np.load(npz_file)
@@ -89,9 +92,13 @@ def merge_together(save_dir):
         image_max_score.append(preds_all.max())
         cls_label.append(npz["cls_label"])
         cls_pred.append(npz["cls_pred"])
+        if "cls_prob" in npz:
+            cls_prob.append(npz["cls_prob"])
+        else:
+            cls_prob.append(None)
     # preds = np.concatenate(np.asarray(preds), axis=0)  # N x H x W
     # masks = np.concatenate(np.asarray(masks), axis=0)  # N x H x W
-    return fileinfos, labels,image_max_score,masks,preds,cls_label,cls_pred,points
+    return fileinfos, labels,image_max_score,masks,preds,cls_label,cls_pred,points,cls_prob
 
 
 
@@ -212,6 +219,21 @@ def min_max_normalize(data):
     normalized_data = (data - min_val) / (max_val - min_val)
     
     return normalized_data
+
+
+def fuse_semantic_confidence_scores(image_scores, cls_labels, cls_probs, alpha=0.0):
+    if alpha <= 0 or cls_probs is None:
+        return image_scores
+    fused = []
+    for score, cls_label, cls_prob in zip(image_scores, cls_labels, cls_probs):
+        if cls_prob is None:
+            fused.append(score)
+            continue
+        label = int(np.asarray(cls_label).reshape(-1)[0])
+        probs = np.asarray(cls_prob).reshape(-1)
+        confidence = probs[label] if 0 <= label < probs.shape[0] else probs.max()
+        fused.append(float(score) + alpha * (1.0 - float(confidence)))
+    return fused
 
 eval_lookup_table = {
     "mean": EvalImageMean,

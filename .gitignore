@@ -10,5 +10,8 @@ result
 *.pth
 
 cuda.sh
+SeDiR修改报告.md
+history.md
 
 *.pdf
+*.pyc

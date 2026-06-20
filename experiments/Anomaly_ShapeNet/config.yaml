@@ -32,10 +32,10 @@ trainer:
   print_freq_step: 10
   tb_freq_step: 1
   lr_scheduler:
-    type: StepLR
+    type: CosineAnnealingLR
     kwargs:
-      step_size: 800
-      gamma: 0.1
+      T_max: 1000
+      eta_min: 0.0
   optimizer:
     type: AdamW
     kwargs:
@@ -53,6 +53,7 @@ saver:
 evaluator:
   save_dir: result
   key_metric: mean_pixel-AUROC_auc
+  semantic_score_alpha: 0.05
   metrics:
     auc:
       - name: std
@@ -73,7 +74,7 @@ net:
         pretrained: True
         outlayers: [1,2,3,4]
         checkpoint_path: ../../pretrain_ckp/modelnet_8k.pth
-        group_size: 128
+        group_size: 256
         num_group: 1024
         data_dir: /home/Yukino/Programs/SeDir/data/Anomaly_ShapeNet           #This path must be modified to the absolute path of your own dataset !!!
     - name: reconstruction
