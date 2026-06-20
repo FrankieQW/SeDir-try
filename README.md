@@ -8,6 +8,22 @@ This repository is a SeDiR reproduction project derived from the official [MC3D-
 
 See `instruction.md` for conda environment setup, dataset paths, training commands, and 6GB GPU notes.
 
+## Install
+
+Run the install script from the repository root to create the default `SeDir` conda environment and install the project dependencies:
+
+```bash
+./install.sh
+conda activate SeDir
+source env.sh
+```
+
+To use a different environment name:
+
+```bash
+./install.sh <env-name>
+```
+
 The original MC3D-AD README content is kept below for dataset and baseline reference.
 
 # Original MC3D-AD Notes
