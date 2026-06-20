@@ -1,0 +1,411 @@
+{"filename": "cabinet0/test/cabinet0_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_broken0.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_broken1.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge0.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge1.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge2.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge3.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge4.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge5.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_bulge6.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity0.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity1.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity2.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity3.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity4.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity5.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_concavity6.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_hole0.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_hole1.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive0.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive1.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive10.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive11.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive12.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive13.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive14.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive2.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive3.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive4.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive5.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive6.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive7.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive8.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_positive9.pcd", "label": 0, "label_name": "good", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_scratch0.txt", "clsname": "cabinet0"}
+{"filename": "cabinet0/test/cabinet0_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "cabinet0/GT/cabinet0_scratch1.txt", "clsname": "cabinet0"}
+{"filename": "cap1/test/cap1_bending0.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bending0.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_broken2.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_broken2.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_broken3.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_broken3.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge0.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge1.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge2.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge3.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge4.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge5.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_bulge6.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity0.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity1.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity2.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity3.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity4.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity5.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_concavity6.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_hole0.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "cap1/GT/cap1_hole1.txt", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive0.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive1.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive10.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive11.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive12.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive13.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive14.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive2.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive3.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive4.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive5.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive6.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive7.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive8.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap1/test/cap1_positive9.pcd", "label": 0, "label_name": "good", "clsname": "cap1"}
+{"filename": "cap2/test/cap2_bending0.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bending0.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_broken2.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_broken2.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_broken3.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_broken3.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge0.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge1.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge2.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge3.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge4.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge5.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_bulge6.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity0.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity1.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity2.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity3.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity4.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity5.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_concavity6.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_hole0.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "cap2/GT/cap2_hole1.txt", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive0.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive1.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive10.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive11.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive12.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive13.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive14.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive2.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive3.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive4.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive5.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive6.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive7.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive8.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "cap2/test/cap2_positive9.pcd", "label": 0, "label_name": "good", "clsname": "cap2"}
+{"filename": "chair0/test/chair0_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_broken0.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_broken1.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge0.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge1.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge2.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge3.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge4.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge5.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_bulge6.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity0.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity1.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity2.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity3.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity4.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity5.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_concavity6.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_crak0.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_crak0.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_crak1.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_crak1.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive0.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive1.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive10.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive11.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive12.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive13.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive14.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive2.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive3.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive4.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive5.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive6.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive7.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive8.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_positive9.pcd", "label": 0, "label_name": "good", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_scratch0.txt", "clsname": "chair0"}
+{"filename": "chair0/test/chair0_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "chair0/GT/chair0_scratch1.txt", "clsname": "chair0"}
+{"filename": "cup2/test/cup2_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge0.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge1.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge2.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge3.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge4.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge5.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_bulge6.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity0.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity1.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity2.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity3.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity4.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity5.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "cup2/GT/cup2_concavity6.txt", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive0.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive1.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive10.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive11.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive12.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive13.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive14.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive2.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive3.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive4.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive5.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive6.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive7.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive8.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "cup2/test/cup2_positive9.pcd", "label": 0, "label_name": "good", "clsname": "cup2"}
+{"filename": "desk0/test/desk0_positive0.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive1.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive10.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive11.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive12.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive13.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive14.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive2.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive3.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive4.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive5.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive6.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive7.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive8.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk0_positive9.pcd", "label": 0, "label_name": "good", "clsname": "desk0"}
+{"filename": "desk0/test/desk_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_broken0.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_broken1.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge0.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge1.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge2.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge3.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge4.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge5.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_bulge6.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity0.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity1.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity2.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity3.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity4.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity5.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_concavity6.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_hole0.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_hole1.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_scratch0.txt", "clsname": "desk0"}
+{"filename": "desk0/test/desk_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "desk0/GT/desk_scratch1.txt", "clsname": "desk0"}
+{"filename": "knife0/test/knife0_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_broken0.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_broken1.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge0.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge1.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge2.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge3.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge4.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge5.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_bulge6.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity0.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity1.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity2.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity3.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity4.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity5.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_concavity6.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_hole0.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_hole1.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive0.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive1.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive10.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive11.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive12.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive13.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive14.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive2.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive3.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive4.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive5.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive6.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive7.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive8.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_positive9.pcd", "label": 0, "label_name": "good", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_scratch0.txt", "clsname": "knife0"}
+{"filename": "knife0/test/knife0_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "knife0/GT/knife0_scratch1.txt", "clsname": "knife0"}
+{"filename": "knife1/test/knife1_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_broken0.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_broken1.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge0.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge1.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge2.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge3.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge4.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge5.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_bulge6.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity0.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity1.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity2.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity3.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity4.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity5.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_concavity6.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_hole0.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_hole1.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive0.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive1.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive10.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive11.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive12.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive13.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive14.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive2.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive3.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive4.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive5.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive6.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive7.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive8.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_positive9.pcd", "label": 0, "label_name": "good", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_scratch0.txt", "clsname": "knife1"}
+{"filename": "knife1/test/knife1_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "knife1/GT/knife1_scratch1.txt", "clsname": "knife1"}
+{"filename": "microphone1/test/microphone1_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge0.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge1.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge2.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge3.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge4.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge5.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_bulge6.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity0.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity1.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity2.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity3.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity4.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity5.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_concavity6.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive0.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive1.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive10.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive11.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive12.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive13.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive14.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive2.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive3.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive4.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive5.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive6.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive7.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive8.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_positive9.pcd", "label": 0, "label_name": "good", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_scratch0.txt", "clsname": "microphone1"}
+{"filename": "microphone1/test/microphone1_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "microphone1/GT/microphone1_scratch1.txt", "clsname": "microphone1"}
+{"filename": "screen0/test/screen0_broken0.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_broken0.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_broken1.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_broken1.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge0.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge1.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge2.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge3.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge4.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge5.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_bulge6.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity0.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity1.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity2.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity3.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity4.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity5.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_concavity6.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_hole0.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "screen0/GT/screen0_hole1.txt", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive0.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive1.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive10.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive11.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive12.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive13.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive14.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive2.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive3.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive4.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive5.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive6.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive7.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive8.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "screen0/test/screen0_positive9.pcd", "label": 0, "label_name": "good", "clsname": "screen0"}
+{"filename": "vase10/test/vase10_bending0.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bending0.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_broken2.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_broken2.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_broken3.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_broken3.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge0.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge1.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge2.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge3.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge4.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge5.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_bulge6.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity0.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity1.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity2.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity3.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity4.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity5.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_concavity6.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_crak4.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_crak4.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_crak5.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_crak5.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_hole0.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_hole1.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive0.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive1.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive10.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive11.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive12.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive13.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive14.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive2.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive3.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive4.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive5.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive6.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive7.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive8.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_positive9.pcd", "label": 0, "label_name": "good", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_scratch0.txt", "clsname": "vase10"}
+{"filename": "vase10/test/vase10_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "vase10/GT/vase10_scratch1.txt", "clsname": "vase10"}
+{"filename": "vase6/test/vase6_broken2.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_broken2.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_broken3.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_broken3.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge0.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge0.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge1.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge1.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge2.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge2.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge3.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge3.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge4.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge4.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge5.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge5.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_bulge6.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_bulge6.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity0.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity0.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity1.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity1.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity2.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity2.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity3.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity3.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity4.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity4.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity5.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity5.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_concavity6.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_concavity6.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_crak4.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_crak4.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_crak5.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_crak5.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_hole0.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_hole0.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_hole1.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_hole1.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive0.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive1.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive10.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive11.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive12.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive13.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive14.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive2.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive3.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive4.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive5.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive6.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive7.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive8.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_positive9.pcd", "label": 0, "label_name": "good", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_scratch0.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_scratch0.txt", "clsname": "vase6"}
+{"filename": "vase6/test/vase6_scratch1.pcd", "label": 1, "label_name": "defective", "maskname": "vase6/GT/vase6_scratch1.txt", "clsname": "vase6"}

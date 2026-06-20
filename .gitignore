@@ -1,6 +1,7 @@
 gitignore
 #文件夹
 result
+experiments/Anomaly_ShapeNet/log
 #数据文件
 *.txt
 *.pcd
